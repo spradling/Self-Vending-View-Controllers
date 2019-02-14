@@ -1,0 +1,369 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD52E8B92214C75A000A8030 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52E8B82214C75A000A8030 /* AppDelegate.swift */; };
+		CD52E8BB2214C75A000A8030 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52E8BA2214C75A000A8030 /* ViewController.swift */; };
+		CD52E8BE2214C75A000A8030 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD52E8BC2214C75A000A8030 /* Main.storyboard */; };
+		CD52E8C02214C75C000A8030 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD52E8BF2214C75C000A8030 /* Assets.xcassets */; };
+		CD52E8C32214C75C000A8030 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD52E8C12214C75C000A8030 /* LaunchScreen.storyboard */; };
+		CD52E8CB2214CA77000A8030 /* SelfVendingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52E8CA2214CA77000A8030 /* SelfVendingProtocol.swift */; };
+		CD52E8CE2214D1DA000A8030 /* AnotherStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD52E8CD2214D1DA000A8030 /* AnotherStoryboard.storyboard */; };
+		CD52E8D02214DE92000A8030 /* AViewControllersNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD52E8CF2214DE92000A8030 /* AViewControllersNib.xib */; };
+		CD52E8D22214E032000A8030 /* Implementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52E8D12214E032000A8030 /* Implementation.swift */; };
+		CD52E8D42214E21F000A8030 /* StandaloneNibs.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD52E8D32214E21F000A8030 /* StandaloneNibs.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CD52E8B52214C75A000A8030 /* Self-Vending ViewControllers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Self-Vending ViewControllers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD52E8B82214C75A000A8030 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD52E8BA2214C75A000A8030 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD52E8BD2214C75A000A8030 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD52E8BF2214C75C000A8030 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD52E8C22214C75C000A8030 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD52E8C42214C75C000A8030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD52E8CA2214CA77000A8030 /* SelfVendingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfVendingProtocol.swift; sourceTree = "<group>"; };
+		CD52E8CD2214D1DA000A8030 /* AnotherStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnotherStoryboard.storyboard; sourceTree = "<group>"; };
+		CD52E8CF2214DE92000A8030 /* AViewControllersNib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AViewControllersNib.xib; sourceTree = "<group>"; };
+		CD52E8D12214E032000A8030 /* Implementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Implementation.swift; path = "Self-Vending ViewControllers/Implementation.swift"; sourceTree = SOURCE_ROOT; };
+		CD52E8D32214E21F000A8030 /* StandaloneNibs.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StandaloneNibs.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD52E8B22214C75A000A8030 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD52E8AC2214C75A000A8030 = {
+			isa = PBXGroup;
+			children = (
+				CD52E8B72214C75A000A8030 /* Self-Vending ViewControllers */,
+				CD52E8B62214C75A000A8030 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD52E8B62214C75A000A8030 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD52E8B52214C75A000A8030 /* Self-Vending ViewControllers.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD52E8B72214C75A000A8030 /* Self-Vending ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD52E8B82214C75A000A8030 /* AppDelegate.swift */,
+				CD52E8CA2214CA77000A8030 /* SelfVendingProtocol.swift */,
+				CD52E8BA2214C75A000A8030 /* ViewController.swift */,
+				CD52E8D12214E032000A8030 /* Implementation.swift */,
+				CD52E8CC2214D1C5000A8030 /* Resources */,
+				CD52E8C42214C75C000A8030 /* Info.plist */,
+			);
+			path = "Self-Vending ViewControllers";
+			sourceTree = "<group>";
+		};
+		CD52E8CC2214D1C5000A8030 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD52E8BC2214C75A000A8030 /* Main.storyboard */,
+				CD52E8BF2214C75C000A8030 /* Assets.xcassets */,
+				CD52E8C12214C75C000A8030 /* LaunchScreen.storyboard */,
+				CD52E8CD2214D1DA000A8030 /* AnotherStoryboard.storyboard */,
+				CD52E8D32214E21F000A8030 /* StandaloneNibs.xib */,
+				CD52E8CF2214DE92000A8030 /* AViewControllersNib.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD52E8B42214C75A000A8030 /* Self-Vending ViewControllers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD52E8C72214C75C000A8030 /* Build configuration list for PBXNativeTarget "Self-Vending ViewControllers" */;
+			buildPhases = (
+				CD52E8B12214C75A000A8030 /* Sources */,
+				CD52E8B22214C75A000A8030 /* Frameworks */,
+				CD52E8B32214C75A000A8030 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Self-Vending ViewControllers";
+			productName = "Self-Vending ViewControllers";
+			productReference = CD52E8B52214C75A000A8030 /* Self-Vending ViewControllers.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD52E8AD2214C75A000A8030 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = cspantech;
+				TargetAttributes = {
+					CD52E8B42214C75A000A8030 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = CD52E8B02214C75A000A8030 /* Build configuration list for PBXProject "Self-Vending ViewControllers" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD52E8AC2214C75A000A8030;
+			productRefGroup = CD52E8B62214C75A000A8030 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD52E8B42214C75A000A8030 /* Self-Vending ViewControllers */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD52E8B32214C75A000A8030 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD52E8D42214E21F000A8030 /* StandaloneNibs.xib in Resources */,
+				CD52E8C32214C75C000A8030 /* LaunchScreen.storyboard in Resources */,
+				CD52E8CE2214D1DA000A8030 /* AnotherStoryboard.storyboard in Resources */,
+				CD52E8C02214C75C000A8030 /* Assets.xcassets in Resources */,
+				CD52E8D02214DE92000A8030 /* AViewControllersNib.xib in Resources */,
+				CD52E8BE2214C75A000A8030 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD52E8B12214C75A000A8030 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD52E8CB2214CA77000A8030 /* SelfVendingProtocol.swift in Sources */,
+				CD52E8D22214E032000A8030 /* Implementation.swift in Sources */,
+				CD52E8BB2214C75A000A8030 /* ViewController.swift in Sources */,
+				CD52E8B92214C75A000A8030 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CD52E8BC2214C75A000A8030 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD52E8BD2214C75A000A8030 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD52E8C12214C75C000A8030 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD52E8C22214C75C000A8030 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD52E8C52214C75C000A8030 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD52E8C62214C75C000A8030 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD52E8C82214C75C000A8030 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4DTZJF4FB5;
+				INFOPLIST_FILE = "Self-Vending ViewControllers/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cspan.Self-Vending-ViewControllers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD52E8C92214C75C000A8030 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4DTZJF4FB5;
+				INFOPLIST_FILE = "Self-Vending ViewControllers/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cspan.Self-Vending-ViewControllers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD52E8B02214C75A000A8030 /* Build configuration list for PBXProject "Self-Vending ViewControllers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD52E8C52214C75C000A8030 /* Debug */,
+				CD52E8C62214C75C000A8030 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD52E8C72214C75C000A8030 /* Build configuration list for PBXNativeTarget "Self-Vending ViewControllers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD52E8C82214C75C000A8030 /* Debug */,
+				CD52E8C92214C75C000A8030 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD52E8AD2214C75A000A8030 /* Project object */;
+}

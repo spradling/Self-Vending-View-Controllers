@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6KN-0P-G1z">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Another Storyboard First View Controller-->
+        <scene sceneID="yFM-hG-SHe">
+            <objects>
+                <viewController storyboardIdentifier="AnotherStoryboardFirstViewController" id="6KN-0P-G1z" customClass="AnotherStoryboardFirstViewController" customModule="Self_Vending_ViewControllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z8n-bF-liP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This view controller was loaded from AnotherStoryboard.storyboard. It is the initial view controller in that storyboard" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60n-gU-SjG">
+                                <rect key="frame" x="30" y="303" width="315" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.51911246779999998" green="0.1375807822" blue="0.3666690588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="60n-gU-SjG" firstAttribute="leading" secondItem="Z8n-bF-liP" secondAttribute="leading" constant="30" id="1is-cp-E6e"/>
+                            <constraint firstAttribute="trailing" secondItem="60n-gU-SjG" secondAttribute="trailing" constant="30" id="jbJ-hZ-Rpk"/>
+                            <constraint firstItem="60n-gU-SjG" firstAttribute="centerX" secondItem="Z8n-bF-liP" secondAttribute="centerX" id="kDa-mE-wRU"/>
+                            <constraint firstItem="60n-gU-SjG" firstAttribute="centerY" secondItem="Z8n-bF-liP" secondAttribute="centerY" id="xl3-ao-fpn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uhU-oP-dvF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uAz-0O-tki" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-609" y="-6"/>
+        </scene>
+        <!--Another Storyboard Second View Controller-->
+        <scene sceneID="7MQ-f8-vSU">
+            <objects>
+                <viewController storyboardIdentifier="AnotherStoryboardSecondViewController" id="HQ8-s5-HYS" customClass="AnotherStoryboardSecondViewController" customModule="Self_Vending_ViewControllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nSh-dU-MXX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQv-XK-vV9">
+                                <rect key="frame" x="30" y="283" width="315" height="101.5"/>
+                                <string key="text">This view controller was loaded from AnotherStoryboard.storyboard. It is the second view controller in that storyboard, so it was accessed by identifier</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.32549019610000002" green="0.73333333329999995" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="4Rf-gc-2Ds" firstAttribute="trailing" secondItem="EQv-XK-vV9" secondAttribute="trailing" constant="30" id="7XN-96-8Ax"/>
+                            <constraint firstItem="EQv-XK-vV9" firstAttribute="centerY" secondItem="nSh-dU-MXX" secondAttribute="centerY" id="T8n-Up-qme"/>
+                            <constraint firstItem="EQv-XK-vV9" firstAttribute="centerX" secondItem="nSh-dU-MXX" secondAttribute="centerX" id="cUZ-3i-zwH"/>
+                            <constraint firstItem="EQv-XK-vV9" firstAttribute="leading" secondItem="4Rf-gc-2Ds" secondAttribute="leading" constant="30" id="gwX-Ou-IcO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4Rf-gc-2Ds"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bfL-sp-e9Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="284" y="-7"/>
+        </scene>
+    </scenes>
+</document>
