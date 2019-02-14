@@ -41,38 +41,5 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc: UIViewController?
-        switch indexPath.row {
-        case 0:
-            vc = MainStoryboardSecondViewController.viewController
-        case 1:
-            vc = AnotherStoryboardFirstViewController.viewController
-        case 2:
-            vc = AnotherStoryboardSecondViewController.viewController
-        case 3:
-            vc = ViewControllerWithNibView.viewController
-        case 4:
-            vc = FirstView.viewInViewController
-        case 5:
-            vc = SecondView.viewInViewController
-            
-        default:
-            return
-        }
-        
-        guard let viewController = vc else {
-            whoopsie()
-            return
-        }
-        
-        navigationController?.pushViewController(viewController, animated: true)
-    }
     
-    func whoopsie() {
-        let alert = UIAlertController(title: "Something broke", message: nil, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "oh well", style: .default, handler: nil))
-        present(alert, animated: true)
-    }
-
 }

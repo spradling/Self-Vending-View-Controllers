@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CD52E8B92214C75A000A8030 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52E8B82214C75A000A8030 /* AppDelegate.swift */; };
-		CD52E8BB2214C75A000A8030 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52E8BA2214C75A000A8030 /* ViewController.swift */; };
+		CD52E8BB2214C75A000A8030 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52E8BA2214C75A000A8030 /* MainViewController.swift */; };
 		CD52E8BE2214C75A000A8030 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD52E8BC2214C75A000A8030 /* Main.storyboard */; };
 		CD52E8C02214C75C000A8030 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD52E8BF2214C75C000A8030 /* Assets.xcassets */; };
 		CD52E8C32214C75C000A8030 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD52E8C12214C75C000A8030 /* LaunchScreen.storyboard */; };
@@ -17,12 +17,13 @@
 		CD52E8D02214DE92000A8030 /* AViewControllersNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD52E8CF2214DE92000A8030 /* AViewControllersNib.xib */; };
 		CD52E8D22214E032000A8030 /* Implementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52E8D12214E032000A8030 /* Implementation.swift */; };
 		CD52E8D42214E21F000A8030 /* StandaloneNibs.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD52E8D32214E21F000A8030 /* StandaloneNibs.xib */; };
+		CD52E8D62214F67C000A8030 /* VendingInAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52E8D52214F67C000A8030 /* VendingInAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CD52E8B52214C75A000A8030 /* Self-Vending ViewControllers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Self-Vending ViewControllers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD52E8B82214C75A000A8030 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD52E8BA2214C75A000A8030 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD52E8BA2214C75A000A8030 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CD52E8BD2214C75A000A8030 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD52E8BF2214C75C000A8030 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD52E8C22214C75C000A8030 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +33,7 @@
 		CD52E8CF2214DE92000A8030 /* AViewControllersNib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AViewControllersNib.xib; sourceTree = "<group>"; };
 		CD52E8D12214E032000A8030 /* Implementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Implementation.swift; path = "Self-Vending ViewControllers/Implementation.swift"; sourceTree = SOURCE_ROOT; };
 		CD52E8D32214E21F000A8030 /* StandaloneNibs.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StandaloneNibs.xib; sourceTree = "<group>"; };
+		CD52E8D52214F67C000A8030 /* VendingInAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendingInAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +66,10 @@
 		CD52E8B72214C75A000A8030 /* Self-Vending ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				CD52E8B82214C75A000A8030 /* AppDelegate.swift */,
+				CD52E8D72214F6CA000A8030 /* Boilerplate */,
 				CD52E8CA2214CA77000A8030 /* SelfVendingProtocol.swift */,
-				CD52E8BA2214C75A000A8030 /* ViewController.swift */,
 				CD52E8D12214E032000A8030 /* Implementation.swift */,
+				CD52E8D52214F67C000A8030 /* VendingInAction.swift */,
 				CD52E8CC2214D1C5000A8030 /* Resources */,
 				CD52E8C42214C75C000A8030 /* Info.plist */,
 			);
@@ -85,6 +87,15 @@
 				CD52E8CF2214DE92000A8030 /* AViewControllersNib.xib */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		CD52E8D72214F6CA000A8030 /* Boilerplate */ = {
+			isa = PBXGroup;
+			children = (
+				CD52E8B82214C75A000A8030 /* AppDelegate.swift */,
+				CD52E8BA2214C75A000A8030 /* MainViewController.swift */,
+			);
+			path = Boilerplate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,9 +172,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD52E8D62214F67C000A8030 /* VendingInAction.swift in Sources */,
 				CD52E8CB2214CA77000A8030 /* SelfVendingProtocol.swift in Sources */,
 				CD52E8D22214E032000A8030 /* Implementation.swift in Sources */,
-				CD52E8BB2214C75A000A8030 /* ViewController.swift in Sources */,
+				CD52E8BB2214C75A000A8030 /* MainViewController.swift in Sources */,
 				CD52E8B92214C75A000A8030 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

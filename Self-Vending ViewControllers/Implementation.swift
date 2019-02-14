@@ -44,6 +44,7 @@ class SampleViewController: UIViewController, SelfVendingViewController {
 }
 
 class SampleView: UIView, SelfVendingView {
+    
     class var nibName: SampleNibs? { return nil }
     
     typealias NibType = SampleNibs
@@ -55,10 +56,12 @@ class SampleView: UIView, SelfVendingView {
 //
 class MainStoryboardSecondViewController: SampleViewController {
     override class var viewSource: Source? { return .storyboard(.main, id: String(describing: self)) }
+    
 }
 
 class AnotherStoryboardFirstViewController: SampleViewController {
     override class var viewSource: Source? { return .storyboardWhereInitial(.alt) }
+    
 }
 
 class AnotherStoryboardSecondViewController: SampleViewController {
@@ -68,11 +71,13 @@ class AnotherStoryboardSecondViewController: SampleViewController {
 
 class ViewControllerWithNibView: SampleViewController {
     override class var viewSource: Source? { return Source.nib(.forVC) }
+    
 }
 
-
+// Views
 class FirstView: SampleView {
     override class var nibName: SampleNibs? { return .standalone }
+    
 }
 
 class SecondView: SampleView {
