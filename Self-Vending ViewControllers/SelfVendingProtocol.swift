@@ -42,7 +42,11 @@ extension StoryboardVendor {
     
 }
 
-protocol NibVendor: StoryboardVendor { }
+protocol NibVendor: RawRepresentable where RawValue == String {
+    
+    var bundle: Bundle? { get }
+    
+}
 
 extension NibVendor {
     
