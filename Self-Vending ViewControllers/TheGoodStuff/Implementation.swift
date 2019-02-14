@@ -34,54 +34,45 @@ enum SampleNibs: String, NibVendor {
     
 }
 
-class SampleViewController: UIViewController, SelfVendingViewController {
-    
-    class var viewSource: Source? { return nil }
-    
-    typealias StoryboardType = SampleStoryboard
-    typealias NibType = SampleNibs
-    
-}
+// Credit to Ted Rothrock for pointing out that you can fulfill associatedType requirements with a where clause in a subprotocol
+protocol SampleViewControllerProtocol: SelfVendingViewController where StoryboardType == SampleStoryboard, NibType == SampleNibs {}
+protocol SampleViewProtocol: SelfVendingView where NibType == SampleNibs {}
 
-class SampleView: UIView, SelfVendingView {
-    
-    class var nibName: SampleNibs? { return nil }
-    
-    typealias NibType = SampleNibs
-    
-}
+typealias SampleViewController = UIViewController & SampleViewControllerProtocol
+typealias SampleView = UIView & SelfVendingView
+
 
 //
 // MARK: - Individual ViewControllers Being Implemented
 //
 class MainStoryboardSecondViewController: SampleViewController {
-    override class var viewSource: Source? { return .storyboard(.main, id: String(describing: self)) }
+    class var viewSource: Source? { return .storyboard(.main, id: String(describing: self)) }
     
 }
 
 class AnotherStoryboardFirstViewController: SampleViewController {
-    override class var viewSource: Source? { return .storyboardWhereInitial(.alt) }
+    class var viewSource: Source? { return .storyboardWhereInitial(.alt) }
     
 }
 
 class AnotherStoryboardSecondViewController: SampleViewController {
-    override class var viewSource: Source? { return .storyboard(.alt, id: String(describing: self)) }
+     class var viewSource: Source? { return .storyboard(.alt, id: String(describing: self)) }
     
 }
 
 class ViewControllerWithNibView: SampleViewController {
-    override class var viewSource: Source? { return Source.nib(.forVC) }
+    class var viewSource: Source? { return Source.nib(.forVC) }
     
 }
 
 // Views
 class FirstView: SampleView {
-    override class var nibName: SampleNibs? { return .standalone }
+    class var nibName: SampleNibs? { return .standalone }
     
 }
 
 class SecondView: SampleView {
-    override class var nibName: SampleNibs? { return .standalone }
+    class var nibName: SampleNibs? { return .standalone }
     
 
 }
