@@ -30,13 +30,9 @@ extension StoryboardVendor {
         
     }
     
-    func viewController<T: UIViewController>(_ type: T.Type, id: String?) -> T? {
+    func viewController<T: UIViewController>(_ type: T.Type, id: String? = nil) -> T? {
         
-        guard let id = id else {
-            return initial(type)
-        }
-        
-        return storyboard.instantiateViewController(withIdentifier: id) as? T
+        return storyboard.instantiateViewController(withIdentifier: id ?? String(describing: T.self)) as? T
         
     }
     
@@ -97,6 +93,10 @@ enum ViewSourceType<S: StoryboardVendor, N: NibVendor> {
     case storyboard(S, id: String?)
     case storyboardWhereInitial(S)
     case nib(N)
+    
+    static func storyboard(_ board: S) -> ViewSourceType {
+        return .storyboard(board, id: nil)
+    }
     
 }
 

@@ -46,7 +46,7 @@ typealias MyModuleView = UIView & SelfVendingView
 // MARK: - Individual ViewControllers Being Implemented
 //
 class MainStoryboardSecondViewController: MyModuleViewController {
-    class var viewSource: Source? { return .storyboard(.main, id: String(describing: self)) }
+    class var viewSource: Source? { return .storyboard(.main) }
     
 }
 
@@ -56,7 +56,7 @@ class AnotherStoryboardFirstViewController: MyModuleViewController {
 }
 
 class AnotherStoryboardSecondViewController: MyModuleViewController {
-     class var viewSource: Source? { return .storyboard(.alt, id: String(describing: self)) }
+     class var viewSource: Source? { return .storyboard(.alt) }
     
 }
 
