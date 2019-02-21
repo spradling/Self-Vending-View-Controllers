@@ -15,8 +15,11 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         "The initial view controller of another storyboard",
         "A second view controller from a different storyboard",
         "A view controller whose view lives in a xib",
+        "The same view controller as before, whose background has been turned white via a configuration block",
         "A view (without an intrinsic vc) from a xib",
-        "A second view (without an intrinsic vc) from the same xib"
+        "A second view (without an intrinsic vc) from the same xib",
+        "The same view as before, whose background has been turned white via a configuration block"
+
     ]
 
     @IBOutlet var tableView: UITableView!

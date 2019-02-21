@@ -45,22 +45,22 @@ typealias MyModuleView = UIView & SelfVendingView
 //
 // MARK: - Individual ViewControllers Being Implemented
 //
-class MainStoryboardSecondViewController: MyModuleViewController {
+final class MainStoryboardSecondViewController: MyModuleViewController {
     class var viewSource: Source? { return .storyboard(.main) }
     
 }
 
-class AnotherStoryboardFirstViewController: MyModuleViewController {
+final class AnotherStoryboardFirstViewController: MyModuleViewController {
     class var viewSource: Source? { return .storyboardWhereInitial(.alt) }
     
 }
 
-class AnotherStoryboardSecondViewController: MyModuleViewController {
+final class AnotherStoryboardSecondViewController: MyModuleViewController {
      class var viewSource: Source? { return .storyboard(.alt) }
     
 }
 
-class ViewControllerWithNibView: MyModuleViewController {
+final class ViewControllerWithNibView: MyModuleViewController {
     class var viewSource: Source? { return Source.nib(.forVC) }
     
 }
@@ -74,5 +74,4 @@ class FirstView: MyModuleView {
 class SecondView: MyModuleView {
     class var nibName: MyModuleNibs? { return .standalone }
     
-
 }

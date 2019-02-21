@@ -117,7 +117,7 @@ protocol SelfVendingViewController where Self: UIViewController {
 // non-overridable methods in protocol extension, keep implementation simple
 extension SelfVendingViewController {
     
-    static var viewController: Self? {
+    private static var viewController: Self? {
         
         switch viewSource {
             
@@ -135,6 +135,12 @@ extension SelfVendingViewController {
             
         }
         
+    }
+    
+    static func viewController(_ configurationBlock: ((Self) -> Void)? = nil) -> Self? {
+        guard let viewController = viewController else { return nil }
+        configurationBlock?(viewController)
+        return viewController
     }
     
     static var viewControllerInNavigationController: UINavigationController? {
@@ -169,7 +175,13 @@ protocol SelfVendingView where Self: UIView {
 
 extension SelfVendingView {
     
-    static var view: Self? {
+    static func view(_ configurationBlock: ((Self) -> Void)? = nil) -> Self? {
+        guard let view = view else { return nil }
+        configurationBlock?(view)
+        return view
+    }
+    
+    private static var view: Self? {
         
         return view(withOwner: nil)
         
@@ -187,9 +199,9 @@ extension SelfVendingView {
         
     }
     
-    static var viewInViewController: UIViewController? {
+    static func viewInViewController(_ configurationBlock: ((Self) -> Void)? = nil) -> UIViewController? {
         
-        guard let view = view else {
+        guard let view = view(configurationBlock) else {
             return nil
         }
         
