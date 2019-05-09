@@ -137,9 +137,13 @@ extension SelfVendingViewController {
         
     }
     
-    static func viewController(_ configurationBlock: ((Self) -> Void)? = nil) -> Self? {
+    static func viewController(preconfigurationBlock: ((Self) -> Void)? = nil, configurationBlock: ((Self) -> Void)? = nil) -> Self? {
         guard let viewController = viewController else { return nil }
-        configurationBlock?(viewController)
+        preconfigurationBlock?(viewController)
+        if let configurationBlock = configurationBlock {
+            viewController.loadView()
+            configurationBlock(viewController)
+        }
         return viewController
     }
     
@@ -213,3 +217,16 @@ extension SelfVendingView {
     
 }
 
+
+
+
+
+class ConfigurableViewController: UIViewController {
+    
+    var configurationBlock: (UIViewController) -> Void = { _ in }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        configurationBlock(self)
+    }
+}

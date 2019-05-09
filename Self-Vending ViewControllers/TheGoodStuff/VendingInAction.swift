@@ -17,7 +17,9 @@ extension MainViewController {
         
         switch indexPath.row {
         case 0:
-            vc = MainStoryboardSecondViewController.viewController()
+            vc = MainStoryboardSecondViewController.viewController() {
+                $0.label?.text = "This label has been set programmatically"
+            }
         case 1:
             vc = AnotherStoryboardFirstViewController.viewController()
         case 2:
@@ -34,6 +36,7 @@ extension MainViewController {
             vc = SecondView.viewInViewController()
         case 7:
             vc = SecondView.viewInViewController() {
+                $0.label?.text = "This label has been set programmatically"
                 $0.backgroundColor = .white
             }
         default:

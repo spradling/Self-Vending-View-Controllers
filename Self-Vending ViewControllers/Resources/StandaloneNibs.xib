@@ -52,6 +52,9 @@
                 <constraint firstItem="y9G-gW-s7j" firstAttribute="leading" secondItem="HO9-Na-Vwa" secondAttribute="leading" constant="30" id="sVf-8I-qKe"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="zDz-3k-CuP"/>
+            <connections>
+                <outlet property="label" destination="y9G-gW-s7j" id="kKt-sN-kUC"/>
+            </connections>
             <point key="canvasLocation" x="1026" y="261"/>
         </view>
     </objects>

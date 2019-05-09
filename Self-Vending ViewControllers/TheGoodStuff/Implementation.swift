@@ -36,16 +36,20 @@ enum MyModuleNibs: String, NibVendor {
 
 // Credit to Ted Rothrock for pointing out that you can fulfill associatedType requirements with a where clause in a subprotocol
 protocol MyModuleViewControllerProtocol: SelfVendingViewController where StoryboardType == MyModuleStoryboard, NibType == MyModuleNibs {}
+
 protocol MyModuleViewProtocol: SelfVendingView where NibType == MyModuleNibs {}
 
 typealias MyModuleViewController = UIViewController & MyModuleViewControllerProtocol
 typealias MyModuleView = UIView & SelfVendingView
 
 
+
+
 //
 // MARK: - Individual ViewControllers Being Implemented
 //
-final class MainStoryboardSecondViewController: MyModuleViewController {
+final class MainStoryboardSecondViewController: MyModuleViewController {    
+    @IBOutlet var label: UILabel?
     class var viewSource: Source? { return .storyboard(.main) }
     
 }
@@ -72,6 +76,7 @@ class FirstView: MyModuleView {
 }
 
 class SecondView: MyModuleView {
+    @IBOutlet var label: UILabel?
     class var nibName: MyModuleNibs? { return .standalone }
     
 }
