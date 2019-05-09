@@ -19,8 +19,10 @@ The module is also responsible for creating these enums, which on the one hand a
 ## View Controller: Easy Breezy Implementation
 With all that structure in place, each view controller or view (or, in the future, cell!) you create needs to define only one property to conform to its respective protocol and become a fully automatic self-vending view controller:
 
-`class var viewSource: Source? { return .storyboard(.nameOfStoryboard) }`
+```swift
+class var viewSource: Source? { return .storyboard(.nameOfStoryboard) }
+```
 
 That's it!
 
-Now you can call your viewController with `.viewController` and you'll get a fully instantiated screen from the correct screen, every time.
+Now you can call your viewController with `.viewController()` and you'll get a fully instantiated screen from the correct screen, every time.
