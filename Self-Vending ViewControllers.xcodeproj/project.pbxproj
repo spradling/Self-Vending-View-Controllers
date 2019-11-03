@@ -7,39 +7,98 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CD52E8B92214C75A000A8030 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52E8B82214C75A000A8030 /* AppDelegate.swift */; };
-		CD52E8BB2214C75A000A8030 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52E8BA2214C75A000A8030 /* MainViewController.swift */; };
-		CD52E8BE2214C75A000A8030 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD52E8BC2214C75A000A8030 /* Main.storyboard */; };
-		CD52E8C02214C75C000A8030 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD52E8BF2214C75C000A8030 /* Assets.xcassets */; };
-		CD52E8C32214C75C000A8030 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD52E8C12214C75C000A8030 /* LaunchScreen.storyboard */; };
-		CD52E8CB2214CA77000A8030 /* SelfVendingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52E8CA2214CA77000A8030 /* SelfVendingProtocol.swift */; };
-		CD52E8CE2214D1DA000A8030 /* AnotherStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD52E8CD2214D1DA000A8030 /* AnotherStoryboard.storyboard */; };
-		CD52E8D02214DE92000A8030 /* AViewControllersNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD52E8CF2214DE92000A8030 /* AViewControllersNib.xib */; };
-		CD52E8D42214E21F000A8030 /* StandaloneNibs.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD52E8D32214E21F000A8030 /* StandaloneNibs.xib */; };
-		CD52E8D62214F67C000A8030 /* VendingInAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52E8D52214F67C000A8030 /* VendingInAction.swift */; };
-		CD52E8DA22150836000A8030 /* Implementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52E8D922150836000A8030 /* Implementation.swift */; };
-		CD52E8DD22150873000A8030 /* SelfVendingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52E8DC22150873000A8030 /* SelfVendingCollectionViewCell.swift */; };
+		D49916B022E7B39F008597E0 /* VendableFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49916A722E7B39F008597E0 /* VendableFramework.framework */; };
+		D49916B522E7B39F008597E0 /* VendableFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49916B422E7B39F008597E0 /* VendableFrameworkTests.swift */; };
+		D49916B722E7B39F008597E0 /* VendableFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D49916A922E7B39F008597E0 /* VendableFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D49916BE22E7B3E6008597E0 /* ViewVendor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C6D8DF22E78EA1000FAAC5 /* ViewVendor.swift */; };
+		D49916BF22E7B3E6008597E0 /* StoryboardVendor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D499169C22E7B2A8008597E0 /* StoryboardVendor.swift */; };
+		D49916C022E7B3E6008597E0 /* NibVendor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D499169E22E7B2AE008597E0 /* NibVendor.swift */; };
+		D49916C122E7B3E6008597E0 /* SelfVendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D499169422E7AFFD008597E0 /* SelfVendingViewController.swift */; };
+		D49916C222E7B3E6008597E0 /* SelfVendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D499169622E7B004008597E0 /* SelfVendingView.swift */; };
+		D49916C322E7B3E6008597E0 /* SelfVendingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52E8DC22150873000A8030 /* SelfVendingCell.swift */; };
+		D49916C422E7B3E6008597E0 /* ViewSourceIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D499169822E7B0BC008597E0 /* ViewSourceIdentifier.swift */; };
+		D4AD4FA522E7B6B4006A8E19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52E8B82214C75A000A8030 /* AppDelegate.swift */; };
+		D4AD4FA622E7B6D3006A8E19 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52E8BA2214C75A000A8030 /* MainViewController.swift */; };
+		D4AD4FA722E7B6F1006A8E19 /* Implementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52E8D922150836000A8030 /* Implementation.swift */; };
+		D4AD4FA822E7B6F1006A8E19 /* VendingInAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52E8D52214F67C000A8030 /* VendingInAction.swift */; };
+		D4AD4FA922E7B6F1006A8E19 /* ModuleLevelSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D499169A22E7B23B008597E0 /* ModuleLevelSetup.swift */; };
+		D4AD4FAA22E7B6FE006A8E19 /* StandaloneNibs.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD52E8D32214E21F000A8030 /* StandaloneNibs.xib */; };
+		D4AD4FAB22E7B6FE006A8E19 /* AViewControllersNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD52E8CF2214DE92000A8030 /* AViewControllersNib.xib */; };
+		D4AD4FAC22E7B6FE006A8E19 /* TestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4E05F9D22E6575F00C0C492 /* TestCell.xib */; };
+		D4AD4FAD22E7B709006A8E19 /* AnotherStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD52E8CD2214D1DA000A8030 /* AnotherStoryboard.storyboard */; };
+		D4AD4FAE22E7B70E006A8E19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD52E8BC2214C75A000A8030 /* Main.storyboard */; };
+		D4AD4FAF22E7B712006A8E19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD52E8C12214C75C000A8030 /* LaunchScreen.storyboard */; };
+		D4AD4FB022E7B715006A8E19 /* TableViewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4E05F9A22E650A200C0C492 /* TableViewStoryboard.storyboard */; };
+		D4AD4FB122E7B718006A8E19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD52E8BF2214C75C000A8030 /* Assets.xcassets */; };
+		D4AD4FB422E7B8DF006A8E19 /* TableViewProtocolling.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AD4FB322E7B8DF006A8E19 /* TableViewProtocolling.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D49916B122E7B39F008597E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD52E8AD2214C75A000A8030 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D49916A622E7B39F008597E0;
+			remoteInfo = VendableFramework;
+		};
+		D49916ED22E7B564008597E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD52E8AD2214C75A000A8030 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D49916A622E7B39F008597E0;
+			remoteInfo = VendableFramework;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		CD52E8B52214C75A000A8030 /* Self-Vending ViewControllers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Self-Vending ViewControllers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD52E8B82214C75A000A8030 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD52E8BA2214C75A000A8030 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CD52E8BD2214C75A000A8030 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD52E8BF2214C75C000A8030 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD52E8C22214C75C000A8030 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CD52E8C42214C75C000A8030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD52E8CA2214CA77000A8030 /* SelfVendingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfVendingProtocol.swift; sourceTree = "<group>"; };
 		CD52E8CD2214D1DA000A8030 /* AnotherStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnotherStoryboard.storyboard; sourceTree = "<group>"; };
 		CD52E8CF2214DE92000A8030 /* AViewControllersNib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AViewControllersNib.xib; sourceTree = "<group>"; };
 		CD52E8D32214E21F000A8030 /* StandaloneNibs.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StandaloneNibs.xib; sourceTree = "<group>"; };
 		CD52E8D52214F67C000A8030 /* VendingInAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendingInAction.swift; sourceTree = "<group>"; };
 		CD52E8D922150836000A8030 /* Implementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Implementation.swift; sourceTree = "<group>"; };
-		CD52E8DC22150873000A8030 /* SelfVendingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfVendingCollectionViewCell.swift; sourceTree = "<group>"; };
+		CD52E8DC22150873000A8030 /* SelfVendingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfVendingCell.swift; sourceTree = "<group>"; };
+		D499169422E7AFFD008597E0 /* SelfVendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfVendingViewController.swift; sourceTree = "<group>"; };
+		D499169622E7B004008597E0 /* SelfVendingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfVendingView.swift; sourceTree = "<group>"; };
+		D499169822E7B0BC008597E0 /* ViewSourceIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSourceIdentifier.swift; sourceTree = "<group>"; };
+		D499169A22E7B23B008597E0 /* ModuleLevelSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleLevelSetup.swift; sourceTree = "<group>"; };
+		D499169C22E7B2A8008597E0 /* StoryboardVendor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardVendor.swift; sourceTree = "<group>"; };
+		D499169E22E7B2AE008597E0 /* NibVendor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibVendor.swift; sourceTree = "<group>"; };
+		D49916A722E7B39F008597E0 /* VendableFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VendableFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D49916A922E7B39F008597E0 /* VendableFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VendableFramework.h; sourceTree = "<group>"; };
+		D49916AA22E7B39F008597E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D49916AF22E7B39F008597E0 /* VendableFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VendableFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D49916B422E7B39F008597E0 /* VendableFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendableFrameworkTests.swift; sourceTree = "<group>"; };
+		D49916B622E7B39F008597E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D49916CD22E7B512008597E0 /* VendableTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VendableTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D49916DB22E7B514008597E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4AD4FB322E7B8DF006A8E19 /* TableViewProtocolling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProtocolling.swift; sourceTree = "<group>"; };
+		D4C6D8DF22E78EA1000FAAC5 /* ViewVendor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewVendor.swift; sourceTree = "<group>"; };
+		D4E05F9A22E650A200C0C492 /* TableViewStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableViewStoryboard.storyboard; sourceTree = "<group>"; };
+		D4E05F9D22E6575F00C0C492 /* TestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CD52E8B22214C75A000A8030 /* Frameworks */ = {
+		D49916A422E7B39F008597E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D49916AC22E7B39F008597E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D49916B022E7B39F008597E0 /* VendableFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D49916CA22E7B512008597E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -52,7 +111,9 @@
 		CD52E8AC2214C75A000A8030 = {
 			isa = PBXGroup;
 			children = (
-				CD52E8B72214C75A000A8030 /* Self-Vending ViewControllers */,
+				D49916A822E7B39F008597E0 /* VendableFramework */,
+				D49916B322E7B39F008597E0 /* VendableFrameworkTests */,
+				D49916CE22E7B512008597E0 /* VendableTestApp */,
 				CD52E8B62214C75A000A8030 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,32 +121,19 @@
 		CD52E8B62214C75A000A8030 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CD52E8B52214C75A000A8030 /* Self-Vending ViewControllers.app */,
+				D49916A722E7B39F008597E0 /* VendableFramework.framework */,
+				D49916AF22E7B39F008597E0 /* VendableFrameworkTests.xctest */,
+				D49916CD22E7B512008597E0 /* VendableTestApp.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		CD52E8B72214C75A000A8030 /* Self-Vending ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				CD52E8DB22150860000A8030 /* TheFuture */,
-				CD52E8D72214F6CA000A8030 /* Boilerplate */,
-				CD52E8D822150809000A8030 /* TheGoodStuff */,
-				CD52E8CC2214D1C5000A8030 /* Resources */,
-				CD52E8C42214C75C000A8030 /* Info.plist */,
-			);
-			path = "Self-Vending ViewControllers";
 			sourceTree = "<group>";
 		};
 		CD52E8CC2214D1C5000A8030 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CD52E8BC2214C75A000A8030 /* Main.storyboard */,
+				D49916C822E7B4AA008597E0 /* Xibs */,
+				D49916C722E7B49B008597E0 /* Storyboards */,
 				CD52E8BF2214C75C000A8030 /* Assets.xcassets */,
-				CD52E8C12214C75C000A8030 /* LaunchScreen.storyboard */,
-				CD52E8CD2214D1DA000A8030 /* AnotherStoryboard.storyboard */,
-				CD52E8D32214E21F000A8030 /* StandaloneNibs.xib */,
-				CD52E8CF2214DE92000A8030 /* AViewControllersNib.xib */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -102,39 +150,169 @@
 		CD52E8D822150809000A8030 /* TheGoodStuff */ = {
 			isa = PBXGroup;
 			children = (
-				CD52E8CA2214CA77000A8030 /* SelfVendingProtocol.swift */,
 				CD52E8D922150836000A8030 /* Implementation.swift */,
 				CD52E8D52214F67C000A8030 /* VendingInAction.swift */,
+				D499169A22E7B23B008597E0 /* ModuleLevelSetup.swift */,
 			);
 			path = TheGoodStuff;
 			sourceTree = "<group>";
 		};
-		CD52E8DB22150860000A8030 /* TheFuture */ = {
+		CD52E8DB22150860000A8030 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				CD52E8DC22150873000A8030 /* SelfVendingCollectionViewCell.swift */,
+				D49916A022E7B2EF008597E0 /* Vendor Types */,
+				D49916A122E7B30B008597E0 /* Vendable Views */,
+				D499169822E7B0BC008597E0 /* ViewSourceIdentifier.swift */,
 			);
-			path = TheFuture;
+			path = Source;
+			sourceTree = "<group>";
+		};
+		D49916A022E7B2EF008597E0 /* Vendor Types */ = {
+			isa = PBXGroup;
+			children = (
+				D4C6D8DF22E78EA1000FAAC5 /* ViewVendor.swift */,
+				D499169C22E7B2A8008597E0 /* StoryboardVendor.swift */,
+				D499169E22E7B2AE008597E0 /* NibVendor.swift */,
+			);
+			path = "Vendor Types";
+			sourceTree = "<group>";
+		};
+		D49916A122E7B30B008597E0 /* Vendable Views */ = {
+			isa = PBXGroup;
+			children = (
+				D499169422E7AFFD008597E0 /* SelfVendingViewController.swift */,
+				D499169622E7B004008597E0 /* SelfVendingView.swift */,
+				CD52E8DC22150873000A8030 /* SelfVendingCell.swift */,
+			);
+			path = "Vendable Views";
+			sourceTree = "<group>";
+		};
+		D49916A822E7B39F008597E0 /* VendableFramework */ = {
+			isa = PBXGroup;
+			children = (
+				CD52E8DB22150860000A8030 /* Source */,
+				D49916A922E7B39F008597E0 /* VendableFramework.h */,
+				D49916AA22E7B39F008597E0 /* Info.plist */,
+			);
+			path = VendableFramework;
+			sourceTree = "<group>";
+		};
+		D49916B322E7B39F008597E0 /* VendableFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				D49916B422E7B39F008597E0 /* VendableFrameworkTests.swift */,
+				D49916B622E7B39F008597E0 /* Info.plist */,
+			);
+			path = VendableFrameworkTests;
+			sourceTree = "<group>";
+		};
+		D49916C722E7B49B008597E0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CD52E8BC2214C75A000A8030 /* Main.storyboard */,
+				CD52E8C12214C75C000A8030 /* LaunchScreen.storyboard */,
+				CD52E8CD2214D1DA000A8030 /* AnotherStoryboard.storyboard */,
+				D4E05F9A22E650A200C0C492 /* TableViewStoryboard.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D49916C822E7B4AA008597E0 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				CD52E8D32214E21F000A8030 /* StandaloneNibs.xib */,
+				CD52E8CF2214DE92000A8030 /* AViewControllersNib.xib */,
+				D4E05F9D22E6575F00C0C492 /* TestCell.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		D49916CE22E7B512008597E0 /* VendableTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				D4AD4FB222E7B8D4006A8E19 /* WIP */,
+				CD52E8D72214F6CA000A8030 /* Boilerplate */,
+				CD52E8D822150809000A8030 /* TheGoodStuff */,
+				CD52E8CC2214D1C5000A8030 /* Resources */,
+				D49916DB22E7B514008597E0 /* Info.plist */,
+			);
+			path = VendableTestApp;
+			sourceTree = "<group>";
+		};
+		D4AD4FB222E7B8D4006A8E19 /* WIP */ = {
+			isa = PBXGroup;
+			children = (
+				D4AD4FB322E7B8DF006A8E19 /* TableViewProtocolling.swift */,
+			);
+			path = WIP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		D49916A222E7B39F008597E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D49916B722E7B39F008597E0 /* VendableFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		CD52E8B42214C75A000A8030 /* Self-Vending ViewControllers */ = {
+		D49916A622E7B39F008597E0 /* VendableFramework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD52E8C72214C75C000A8030 /* Build configuration list for PBXNativeTarget "Self-Vending ViewControllers" */;
+			buildConfigurationList = D49916B822E7B39F008597E0 /* Build configuration list for PBXNativeTarget "VendableFramework" */;
 			buildPhases = (
-				CD52E8B12214C75A000A8030 /* Sources */,
-				CD52E8B22214C75A000A8030 /* Frameworks */,
-				CD52E8B32214C75A000A8030 /* Resources */,
+				D49916A222E7B39F008597E0 /* Headers */,
+				D49916A322E7B39F008597E0 /* Sources */,
+				D49916A422E7B39F008597E0 /* Frameworks */,
+				D49916A522E7B39F008597E0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Self-Vending ViewControllers";
-			productName = "Self-Vending ViewControllers";
-			productReference = CD52E8B52214C75A000A8030 /* Self-Vending ViewControllers.app */;
+			name = VendableFramework;
+			productName = VendableFramework;
+			productReference = D49916A722E7B39F008597E0 /* VendableFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D49916AE22E7B39F008597E0 /* VendableFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D49916BB22E7B39F008597E0 /* Build configuration list for PBXNativeTarget "VendableFrameworkTests" */;
+			buildPhases = (
+				D49916AB22E7B39F008597E0 /* Sources */,
+				D49916AC22E7B39F008597E0 /* Frameworks */,
+				D49916AD22E7B39F008597E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D49916B222E7B39F008597E0 /* PBXTargetDependency */,
+			);
+			name = VendableFrameworkTests;
+			productName = VendableFrameworkTests;
+			productReference = D49916AF22E7B39F008597E0 /* VendableFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D49916CC22E7B512008597E0 /* VendableTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D49916E722E7B514008597E0 /* Build configuration list for PBXNativeTarget "VendableTestApp" */;
+			buildPhases = (
+				D49916C922E7B512008597E0 /* Sources */,
+				D49916CA22E7B512008597E0 /* Frameworks */,
+				D49916CB22E7B512008597E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D49916EE22E7B564008597E0 /* PBXTargetDependency */,
+			);
+			name = VendableTestApp;
+			productName = VendableTestApp;
+			productReference = D49916CD22E7B512008597E0 /* VendableTestApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -143,12 +321,18 @@
 		CD52E8AD2214C75A000A8030 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = cspantech;
 				TargetAttributes = {
-					CD52E8B42214C75A000A8030 = {
-						CreatedOnToolsVersion = 10.1;
+					D49916A622E7B39F008597E0 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					D49916AE22E7B39F008597E0 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					D49916CC22E7B512008597E0 = {
+						CreatedOnToolsVersion = 10.3;
 					};
 				};
 			};
@@ -165,42 +349,95 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CD52E8B42214C75A000A8030 /* Self-Vending ViewControllers */,
+				D49916CC22E7B512008597E0 /* VendableTestApp */,
+				D49916A622E7B39F008597E0 /* VendableFramework */,
+				D49916AE22E7B39F008597E0 /* VendableFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CD52E8B32214C75A000A8030 /* Resources */ = {
+		D49916A522E7B39F008597E0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD52E8D42214E21F000A8030 /* StandaloneNibs.xib in Resources */,
-				CD52E8C32214C75C000A8030 /* LaunchScreen.storyboard in Resources */,
-				CD52E8CE2214D1DA000A8030 /* AnotherStoryboard.storyboard in Resources */,
-				CD52E8C02214C75C000A8030 /* Assets.xcassets in Resources */,
-				CD52E8D02214DE92000A8030 /* AViewControllersNib.xib in Resources */,
-				CD52E8BE2214C75A000A8030 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D49916AD22E7B39F008597E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D49916CB22E7B512008597E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4AD4FAB22E7B6FE006A8E19 /* AViewControllersNib.xib in Resources */,
+				D4AD4FAE22E7B70E006A8E19 /* Main.storyboard in Resources */,
+				D4AD4FB022E7B715006A8E19 /* TableViewStoryboard.storyboard in Resources */,
+				D4AD4FAD22E7B709006A8E19 /* AnotherStoryboard.storyboard in Resources */,
+				D4AD4FAF22E7B712006A8E19 /* LaunchScreen.storyboard in Resources */,
+				D4AD4FAA22E7B6FE006A8E19 /* StandaloneNibs.xib in Resources */,
+				D4AD4FB122E7B718006A8E19 /* Assets.xcassets in Resources */,
+				D4AD4FAC22E7B6FE006A8E19 /* TestCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CD52E8B12214C75A000A8030 /* Sources */ = {
+		D49916A322E7B39F008597E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD52E8DA22150836000A8030 /* Implementation.swift in Sources */,
-				CD52E8D62214F67C000A8030 /* VendingInAction.swift in Sources */,
-				CD52E8DD22150873000A8030 /* SelfVendingCollectionViewCell.swift in Sources */,
-				CD52E8CB2214CA77000A8030 /* SelfVendingProtocol.swift in Sources */,
-				CD52E8BB2214C75A000A8030 /* MainViewController.swift in Sources */,
-				CD52E8B92214C75A000A8030 /* AppDelegate.swift in Sources */,
+				D49916C022E7B3E6008597E0 /* NibVendor.swift in Sources */,
+				D49916C322E7B3E6008597E0 /* SelfVendingCell.swift in Sources */,
+				D49916C422E7B3E6008597E0 /* ViewSourceIdentifier.swift in Sources */,
+				D49916C222E7B3E6008597E0 /* SelfVendingView.swift in Sources */,
+				D49916BF22E7B3E6008597E0 /* StoryboardVendor.swift in Sources */,
+				D49916C122E7B3E6008597E0 /* SelfVendingViewController.swift in Sources */,
+				D49916BE22E7B3E6008597E0 /* ViewVendor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D49916AB22E7B39F008597E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D49916B522E7B39F008597E0 /* VendableFrameworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D49916C922E7B512008597E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4AD4FA822E7B6F1006A8E19 /* VendingInAction.swift in Sources */,
+				D4AD4FA922E7B6F1006A8E19 /* ModuleLevelSetup.swift in Sources */,
+				D4AD4FA622E7B6D3006A8E19 /* MainViewController.swift in Sources */,
+				D4AD4FA722E7B6F1006A8E19 /* Implementation.swift in Sources */,
+				D4AD4FA522E7B6B4006A8E19 /* AppDelegate.swift in Sources */,
+				D4AD4FB422E7B8DF006A8E19 /* TableViewProtocolling.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D49916B222E7B39F008597E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D49916A622E7B39F008597E0 /* VendableFramework */;
+			targetProxy = D49916B122E7B39F008597E0 /* PBXContainerItemProxy */;
+		};
+		D49916EE22E7B564008597E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D49916A622E7B39F008597E0 /* VendableFramework */;
+			targetProxy = D49916ED22E7B564008597E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CD52E8BC2214C75A000A8030 /* Main.storyboard */ = {
@@ -338,40 +575,138 @@
 			};
 			name = Release;
 		};
-		CD52E8C82214C75C000A8030 /* Debug */ = {
+		D49916B922E7B39F008597E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4DTZJF4FB5;
-				INFOPLIST_FILE = "Self-Vending ViewControllers/Info.plist";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 388LVN5ZUR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = VendableFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cspan.Self-Vending-ViewControllers";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cspantech.VendableFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D49916BA22E7B39F008597E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 388LVN5ZUR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = VendableFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cspantech.VendableFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D49916BC22E7B39F008597E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 388LVN5ZUR;
+				INFOPLIST_FILE = VendableFrameworkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cspantech.VendableFrameworkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		CD52E8C92214C75C000A8030 /* Release */ = {
+		D49916BD22E7B39F008597E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 388LVN5ZUR;
+				INFOPLIST_FILE = VendableFrameworkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cspantech.VendableFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D49916E822E7B514008597E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4DTZJF4FB5;
-				INFOPLIST_FILE = "Self-Vending ViewControllers/Info.plist";
+				DEVELOPMENT_TEAM = 388LVN5ZUR;
+				INFOPLIST_FILE = VendableTestApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cspan.Self-Vending-ViewControllers";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cspantech.VendableTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D49916E922E7B514008597E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 388LVN5ZUR;
+				INFOPLIST_FILE = VendableTestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cspantech.VendableTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -388,11 +723,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CD52E8C72214C75C000A8030 /* Build configuration list for PBXNativeTarget "Self-Vending ViewControllers" */ = {
+		D49916B822E7B39F008597E0 /* Build configuration list for PBXNativeTarget "VendableFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CD52E8C82214C75C000A8030 /* Debug */,
-				CD52E8C92214C75C000A8030 /* Release */,
+				D49916B922E7B39F008597E0 /* Debug */,
+				D49916BA22E7B39F008597E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D49916BB22E7B39F008597E0 /* Build configuration list for PBXNativeTarget "VendableFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D49916BC22E7B39F008597E0 /* Debug */,
+				D49916BD22E7B39F008597E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D49916E722E7B514008597E0 /* Build configuration list for PBXNativeTarget "VendableTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D49916E822E7B514008597E0 /* Debug */,
+				D49916E922E7B514008597E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

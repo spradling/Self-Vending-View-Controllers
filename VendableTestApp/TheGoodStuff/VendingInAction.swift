@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import VendableFramework
 
 extension MainViewController {
     
@@ -31,14 +32,17 @@ extension MainViewController {
                 $0.view.backgroundColor = .white
             }
         case 5:
-            vc = FirstView.viewInViewController()
+            vc = FirstView.viewController()
         case 6:
-            vc = SecondView.viewInViewController()
+            vc = SecondView.viewController()
         case 7:
-            vc = SecondView.viewInViewController() {
-                $0.label?.text = "This label has been set programmatically"
+            vc = SecondView.viewController() {
+                $0.label?.textColor = .black
                 $0.backgroundColor = .white
             }
+        case 8:
+            vc = TableViewController.viewController()
+            (vc as? TableViewController)?.register(TestCell.self)
         default:
             return
         }

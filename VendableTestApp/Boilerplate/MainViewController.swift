@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import VendableFramework
 
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -18,11 +19,17 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         "The same view controller as before, whose background has been turned white via a configuration block",
         "A view (without an intrinsic vc) from a xib",
         "A second view (without an intrinsic vc) from the same xib",
-        "The same view as before, whose background has been turned white via a configuration block"
+        "The same view as before, whose background has been turned white via a configuration block",
+        "A table view, let's see what happens"
 
     ]
 
     @IBOutlet var tableView: UITableView!
+    
+    func register() {
+        TestCell.register(to: tableView)
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,17 +37,20 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.dataSource = self
         tableView.delegate = self
         
+        register()
+        
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewControllerTypes.count
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = viewControllerTypes[indexPath.row]
-        cell.textLabel?.numberOfLines = 2
-        return cell
+        return TestCell.cell(for: tableView, indexPath: indexPath) { [weak self] in
+            $0.label?.text = self?.viewControllerTypes[indexPath.row]
+            $0.label?.numberOfLines = 3
+        }
         
     }
     
